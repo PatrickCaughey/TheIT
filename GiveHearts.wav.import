@@ -1,0 +1,21 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/GiveHearts.wav-284ccb8c10ae1d46c2035277a392c3a7.sample"
+
+[deps]
+
+source_file="res://GiveHearts.wav"
+dest_files=[ "res://.import/GiveHearts.wav-284ccb8c10ae1d46c2035277a392c3a7.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop=false
+compress/mode=0

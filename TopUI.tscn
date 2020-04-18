@@ -1,0 +1,65 @@
+[gd_scene load_steps=12 format=2]
+
+[ext_resource path="res://UI-Bar.png" type="Texture" id=1]
+[ext_resource path="res://Hearts.png" type="Texture" id=2]
+[ext_resource path="res://Heart1.gd" type="Script" id=3]
+[ext_resource path="res://Heart2.gd" type="Script" id=4]
+[ext_resource path="res://Heart3.gd" type="Script" id=5]
+[ext_resource path="res://ITHealth.png" type="Texture" id=6]
+[ext_resource path="res://ITHealth.gd" type="Script" id=7]
+[ext_resource path="res://ItemIndicator.gd" type="Script" id=8]
+[ext_resource path="res://Items.png" type="Texture" id=9]
+[ext_resource path="res://Text.tscn" type="PackedScene" id=10]
+[ext_resource path="res://TopUI.gd" type="Script" id=11]
+
+[node name="TopUI" type="Control"]
+anchor_right = 1.0
+anchor_bottom = 0.214
+script = ExtResource( 11 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="BG" type="Sprite" parent="."]
+texture = ExtResource( 1 )
+centered = false
+
+[node name="Heart1" type="Sprite" parent="BG"]
+position = Vector2( 8, 8 )
+texture = ExtResource( 2 )
+centered = false
+hframes = 2
+script = ExtResource( 3 )
+
+[node name="Heart2" type="Sprite" parent="BG"]
+position = Vector2( 16, 8 )
+texture = ExtResource( 2 )
+centered = false
+hframes = 2
+script = ExtResource( 4 )
+
+[node name="Heart3" type="Sprite" parent="BG"]
+position = Vector2( 24, 8 )
+texture = ExtResource( 2 )
+centered = false
+hframes = 2
+script = ExtResource( 5 )
+
+[node name="ITHealth" type="Sprite" parent="BG"]
+position = Vector2( 84, 12 )
+texture = ExtResource( 6 )
+centered = false
+region_enabled = true
+region_rect = Rect2( 0, 0, 4, 8 )
+script = ExtResource( 7 )
+
+[node name="ItemIndicator" type="Sprite" parent="BG"]
+position = Vector2( 60, 12 )
+texture = ExtResource( 9 )
+centered = false
+vframes = 6
+hframes = 4
+script = ExtResource( 8 )
+
+[node name="Text" parent="BG" instance=ExtResource( 10 )]
+position = Vector2( 8, 32 )

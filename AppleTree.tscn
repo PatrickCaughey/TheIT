@@ -1,0 +1,40 @@
+[gd_scene load_steps=6 format=2]
+
+[ext_resource path="res://AppleTree.gd" type="Script" id=1]
+[ext_resource path="res://Apple.png" type="Texture" id=2]
+[ext_resource path="res://FruitTree.png" type="Texture" id=3]
+[ext_resource path="res://Tree.wav" type="AudioStream" id=4]
+
+[sub_resource type="RectangleShape2D" id=1]
+extents = Vector2( 4, 4 )
+
+[node name="AppleTree" type="RigidBody2D"]
+collision_layer = 12
+collision_mask = 0
+mode = 3
+script = ExtResource( 1 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource( 1 )
+
+[node name="Sprite" type="Sprite" parent="."]
+position = Vector2( 0, -8 )
+z_index = 10
+texture = ExtResource( 3 )
+
+[node name="Fruit1" type="Sprite" parent="Sprite"]
+position = Vector2( -5, -1 )
+texture = ExtResource( 2 )
+
+[node name="Fruit2" type="Sprite" parent="Sprite"]
+position = Vector2( 5, -1 )
+texture = ExtResource( 2 )
+
+[node name="Fruit1Spawn" type="Position2D" parent="."]
+position = Vector2( -8, 8 )
+
+[node name="Fruit2Spawn" type="Position2D" parent="."]
+position = Vector2( 8, 8 )
+
+[node name="TreeSound" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 4 )

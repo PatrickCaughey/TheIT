@@ -1,0 +1,14 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://Player.tscn" type="PackedScene" id=1]
+[ext_resource path="res://TopUI.tscn" type="PackedScene" id=2]
+
+[node name="TestRoom" type="Node2D"]
+
+[node name="Player" parent="." instance=ExtResource( 1 )]
+position = Vector2( 36.226, 21.8865 )
+
+[node name="Camera2D" type="Camera2D" parent="."]
+position = Vector2( 64, 56 )
+
+[node name="TopUI" parent="." instance=ExtResource( 2 )]

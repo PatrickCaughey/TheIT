@@ -1,0 +1,15 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/Troll_hunterX - Untitled.ogg-93097473ad34abe30bef38c4602e0038.oggstr"
+
+[deps]
+
+source_file="res://Troll_hunterX - Untitled.ogg"
+dest_files=[ "res://.import/Troll_hunterX - Untitled.ogg-93097473ad34abe30bef38c4602e0038.oggstr" ]
+
+[params]
+
+loop=true
+loop_offset=0
